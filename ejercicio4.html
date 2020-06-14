@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="..\css\estilos.css"" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<title>Ejercicio Factorial</title>
+</head>
+<header>
+<nav>
+<ul>
+<a href="index.html">Indice</a></li>
+<a href="ejercicio1.html">Ejercicio 1</a>
+<a href="ejercicio2.html">Ejercicio 2</a>
+<a href="ejercicio3.html">Ejercicio 3</a>
+<a href="ejercicio4.html">Ejercicio Factorial</a>
+</ul>
+</nav>
+</header>
+<body>
+<section>
+		<p id="respuesta"></p>
+	</section>	
+	<script type="text/javascript">
+		var i=prompt("Ingrese número para hacer factorial");
+		var m=1;
+		while(i !=0)
+            {
+                var m = m * i;
+                i--;
+                document.getElementById("respuesta").innerHTML="El número factorial es :  "+m;
+            }
+</script>
+</body>
+<footer>
+<article>
+<p id="datos"><br><br>Martínez Aguiñaga Karla Julieta  19002335 <br> 14 de Junios de 2020 <br> Correo: karlamtz8@gmail.com</p>
+<img src="../images/im1.jpg" id="imagen1">
+</article>
+</footer>
+</html>

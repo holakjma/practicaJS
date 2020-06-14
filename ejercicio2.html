@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="..\css\estilos.css"" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<title>Ejercicio 2</title>
+</head>
+<header>
+<nav>
+<ul>
+<a href="index.html">Indice</a></li>
+<a href="ejercicio1.html">Ejercicio 1</a>
+<a href="ejercicio2.html">Ejercicio 2</a>
+<a href="ejercicio3.html">Ejercicio 3</a>
+<a href="ejercicio4.html">Ejercicio Factorial</a>
+</ul>
+</nav>
+</header>
+<body>
+	<section>
+		<form action="#" method="post" name="formu">
+			<h1>Elige de que sección de de la ciudad votaras</h1>
+			<select name="nombre">
+				<option value="Norte">Norte</option>
+				<option value="Sur">Sur</option>
+				<option value="Centro">Centro</option>
+			</select>
+			<input type="button" onclick="votar();" value="Votar" >
+		</form>
+		<article id="mensaje">Vota aquí</article>
+	</section>
+	<script type="text/javascript">
+		function votar(){
+			switch (document.formu.nombre.value) {
+				case "Norte":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Norte";break;
+				case "Sur":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Sur";break;
+				case "Centro":
+				document.getElementById("mensaje").innerHTML="Gracias por votar desde el Centro";break;
+			}
+		}
+	</script>
+</body>
+</body>
+<footer>
+<article>
+<p id="datos"><br><br>Martínez Aguiñaga Karla Julieta  19002335 <br> 14 de Junios de 2020 <br> Correo: karlamtz8@gmail.com</p>
+<img src="../images/im1.jpg" id="imagen1">
+</article>
+</footer>
+</html>

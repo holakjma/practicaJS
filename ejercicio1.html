@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="..\css\estilos.css"" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<title>Ejercicio 1</title>
+</head>
+<header>
+<nav>
+<ul>
+<a href="index.html">Indice</a></li>
+<a href="ejercicio1.html">Ejercicio 1</a>
+<a href="ejercicio2.html">Ejercicio 2</a>
+<a href="ejercicio3.html">Ejercicio 3</a>
+<a href="ejercicio4.html">Ejercicio Factorial</a>
+</ul>
+</nav>
+</header>
+<body onload="ciclo();">
+	<script type="text/javascript">
+		var i=prompt("¿Cuantas cajas desea crear?");
+			var n=1;
+			if(i<=8){
+				while(n<=i){
+					document.write('<article id="caja1" style="background-color:#10375c">'+'<FONT COLOR="#f3c623">Caja'+n+'</FONT>'+'<article>');
+					n++;
+				}		
+			}
+			if(i>=9){
+				while(n<=i){
+					document.write('<article id="caja2" style="background-color:#f3c623">'+'<FONT COLOR="#10375c">Caja'+n+'</FONT>'+'<article>');
+					n++;
+				}
+			}
+	</script>
+<style type="text/css">
+		#caja2{
+  			display: inline-flex;
+		}
+	</style>
+</body>
+<br><br><br><br><footer>
+<p id="datos"><br><br>Martínez Aguiñaga Karla Julieta  19002335 <br> 14 de Junio de 2020 <br> Correo: karlamtz8@gmail.com</p>
+<img src="../images/im1.jpg" id="imagen1">
+</footer>
+</html>
